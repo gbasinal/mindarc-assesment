@@ -1,5 +1,8 @@
 .section-card-container {
     padding: em(55);
+    @media only screen and (max-width: 767px ){
+        padding: em(50) em(25);
+    }
     .card-wrapper {
         display: flex;
         justify-content: center;
@@ -10,16 +13,20 @@
         .card-item {
             width: em(400);
             margin-right: em(35);
-            border: 3px solid #f0f0f0;
+            border: 1px solid #f0f0f0;
             padding: em(25);
-            border-radius: 10px;
+            border-radius: 7px;
+            box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.31);
             @media only screen and (max-width: 1024px){
                 width: 100%;
                 margin-right: 0;
-                margin-bottom: em(50);
+                margin-bottom: em(40);
                 &:last-child {
                     margin-bottom: 0;
                 }
+            }
+            @media only screen and (max-width: 767px){
+                padding: em(20);
             }
             &:last-child{
                 margin-right: 0;
@@ -29,7 +36,7 @@
                 img {
                     width: 100%;
                     object-fit: cover;
-                    border-radius: 10px;
+                    border-radius: 7px;
                 }
             }
             .card-content-wrapper{
@@ -38,6 +45,9 @@
                 text-align: center;
                 p{
                     @include textSettings(black , 22 , -.2 , 25 , 400);
+                    @media only screen and (max-width: 767px){
+                        @include textSettings(black , 18 , -.2 , 25 , 400);
+                    }
                     
                 }
             }
@@ -52,6 +62,9 @@
                     cursor: pointer;
                     padding: em(10) em(15);
                     background-color: transparent;
+                    @media only screen and (max-width: 767px){
+                        @include textSettings(black , 14 , 1.1 , 20 , 700);
+                    }
                 }
             }
         }
