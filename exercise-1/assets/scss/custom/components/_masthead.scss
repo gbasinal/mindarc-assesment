@@ -1,0 +1,39 @@
+.section-masthead-container {
+    height: em(650);
+    .masthead-wrapper {
+        position: relative;
+        height: 100%;
+        .masthead-style {
+            background-image: url("http://via.placeholder.com/1920x650");
+            @include bgSettings(cover , no-repeat , center);
+            width: em(1920);
+            height: em(650);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        .masthead-content-container {
+            z-index: 1;
+            text-align: center;
+            height: 100%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            background-color: rgba(143, 143, 143, .65);
+            .masthead-content-wrapper {
+                
+                h1 {
+                    @include textSettings(white , 90, 0, 80 , 700);
+                    
+                }
+                p {
+                    @include textSettings(white , 40, 1, 30 , 300);
+                    padding-top: em(7);
+                }
+            }
+
+        }
+    }
+}
