@@ -1,36 +1,56 @@
 .section-masthead-container {
     height: em(650);
+    width: 100%;
+    @media only screen and (max-width: 767px){
+        height: em(375);
+    }
     .masthead-wrapper {
         position: relative;
         height: 100%;
+        width: 100%;
         .masthead-style {
             background-image: url("http://via.placeholder.com/1920x650");
             @include bgSettings(cover , no-repeat , center);
-            width: em(1920);
+            width: 100%;
             height: em(650);
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: -1;
+            @media only screen and (max-width: 767px){
+                background-image: url("http://via.placeholder.com/600x600");
+                height: 100%;
+            }
         }
         .masthead-content-container {
             z-index: 1;
             text-align: center;
-            height: 100%;
+            height: 100%;            
             justify-content: center;
             display: flex;
             align-items: center;
             background-color: rgba(143, 143, 143, .65);
+            padding: 0 em(25);
+            @media only screen and (max-width: 767px){
+                padding: 0 em(15);
+            }
             .masthead-content-wrapper {
                 
                 h1 {
                     @include textSettings(white , 90, 0, 80 , 700);
-                    
+                    @media only screen and (max-width: 767px){
+                        @include textSettings(white , 50, 0, 80 , 700);
+                        
+                    }
                 }
                 p {
-                    @include textSettings(white , 40, 1, 30 , 300);
-                    padding-top: em(7);
+                    @include textSettings(white , 40, 1, 40 , 300);
+                    padding-top: em(10);
+                    @media only screen and (max-width: 767px){
+                        @include textSettings(white , 25, 0, 35 , 300);
+                        
+                    }
                 }
             }
 
