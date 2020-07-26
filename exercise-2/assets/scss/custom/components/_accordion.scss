@@ -67,6 +67,9 @@
                                 display: inline;
                             }
                         }
+                        h3 {
+                            font-size: em(18);
+                        }
                     }
 
                     .tabs-content-container {
@@ -85,11 +88,18 @@
                                 padding: 0;
                             }
                             p, li{
-                                font-size: em(18);
+                                font-size: em(20);
                                 margin-bottom: em(10);
+                                opacity: 0;
+                                @media only screen and (max-width: 767px){
+                                    font-size: em(16);
+                                }
                                 &:last-child {
                                     margin-bottom: 0;
                                 }
+                            }
+                            ul {
+                                margin-bottom: em(5);
                             }
                         }
 

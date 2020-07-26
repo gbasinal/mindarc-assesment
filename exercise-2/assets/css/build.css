@@ -178,6 +178,9 @@ body {
     display: inline;
   }
 }
+.section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tab-header h3 {
+  font-size: 1.125em;
+}
 .section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container {
   position: absolute;
   left: 0;
@@ -200,10 +203,19 @@ body {
   }
 }
 .section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container .tabs-content-wrapper p, .section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container .tabs-content-wrapper li {
-  font-size: 1.125em;
+  font-size: 1.25em;
   margin-bottom: 0.625em;
+  opacity: 0;
+}
+@media only screen and (max-width: 767px) {
+  .section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container .tabs-content-wrapper p, .section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container .tabs-content-wrapper li {
+    font-size: 1em;
+  }
 }
 .section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container .tabs-content-wrapper p:last-child, .section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container .tabs-content-wrapper li:last-child {
   margin-bottom: 0;
+}
+.section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container .tabs-content-wrapper ul {
+  margin-bottom: 0.3125em;
 }
 /*# sourceMappingURL=build.css.map */

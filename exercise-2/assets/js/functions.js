@@ -28,7 +28,9 @@
         }
 
         $(".tabs-item").on("click", function(){
-            console.log("asdasd")
+            
+            TweenMax.set($(this).find("p, li"), {opacity: 0});
+            TweenMax.to($(this).find("p, li"), .5, {opacity: 1, ease: Expo.easeInOut});
             if(flag){
                 $(this).siblings().removeClass("active");
                 $(this).toggleClass("active");
@@ -47,6 +49,7 @@
             $(".tabs-wrapper").append("<div class='tabs-item '><div class='tab-header'><h3>"+e.title+"</h3><img src='https://img.icons8.com/windows/64/000000/expand-arrow.png'/></div><div class='tabs-content-container'><div class='tabs-content-wrapper'>"+e.content+"</div></div></div>")
         });
         $(".tabs-item:first-child").addClass("active");
+        TweenMax.to($(".tabs-item:first-child").find("p"), .5, {opacity: 1, ease: Expo.easeInOut});
     }
 
     app.Functions = Functions;
