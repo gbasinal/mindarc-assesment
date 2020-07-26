@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght300;400;700;900&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
@@ -54,5 +54,63 @@ body {
   line-height: 0.75;
   font-weight: 300;
   padding-top: 0.4375em;
+}
+
+.section-card-container {
+  padding: 3.4375em;
+}
+.section-card-container .card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.section-card-container .card-wrapper .card-item {
+  width: 25em;
+  margin-right: 2.1875em;
+  border: 2px solid #f0f0f0;
+  padding: 1.5625em;
+  border-radius: 10px;
+}
+.section-card-container .card-wrapper .card-item:last-child {
+  margin-right: 0;
+}
+.section-card-container .card-wrapper .card-item .card-img-wrapper {
+  margin-bottom: 0.9375em;
+}
+.section-card-container .card-wrapper .card-item .card-img-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.section-card-container .card-wrapper .card-item .card-content-wrapper {
+  margin-bottom: 0.9375em;
+  min-height: 10.625em;
+  text-align: center;
+}
+.section-card-container .card-wrapper .card-item .card-content-wrapper p {
+  color: black;
+  font-size: 1.375em;
+  letter-spacing: -0.0125em;
+  line-height: 1.1363636364;
+  font-weight: 400;
+}
+.section-card-container .card-wrapper .card-item .btn-container {
+  width: 100%;
+  text-align: center;
+}
+.section-card-container .card-wrapper .card-item .btn-container .btn {
+  border-radius: 30px;
+  border: 3px solid black;
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.125em;
+  letter-spacing: 0.06875em;
+  line-height: 1.1111111111;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.625em 0.9375em;
+  background-color: transparent;
 }
 /*# sourceMappingURL=build.css.map */
