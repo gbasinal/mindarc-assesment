@@ -1,9 +1,11 @@
-body {}
-
-b, strong {
-    font-weight:bold;
+* {
+    margin: 0;
+    box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-    outline: none !important;
+body {
+    font-size: 0.833vw;
+    font-family: $roboto;
 }
