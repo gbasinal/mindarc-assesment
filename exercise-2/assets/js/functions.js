@@ -5,7 +5,7 @@
   
 	Functions.prototype.init = function() {
         Functions.prototype.inView();
-        Functions.prototype.setActiveStateForAccordion();
+        Functions.prototype.dataExtractionForAccordion();
 	};
     // My Default script for transtion animation
     Functions.prototype.inView = function() {
@@ -28,7 +28,7 @@
         }
 
         $(".tabs-item").on("click", function(){
-            
+            console.log("asdasd")
             if(flag){
                 $(this).siblings().removeClass("active");
                 $(this).toggleClass("active");
@@ -41,6 +41,14 @@
         })
     }
 
+    Functions.prototype.dataExtractionForAccordion = function(){
+        var data = obj
+        data.forEach( function(e) {
+            $(".tabs-wrapper").append("<div class='tabs-item '><div class='tab-header'><h3>"+e.title+"</h3><img src='https://img.icons8.com/windows/64/000000/expand-arrow.png'/></div><div class='tabs-content-container'><div class='tabs-content-wrapper'>"+e.content+"</div></div></div>")
+        });
+        $(".tabs-item:first-child").addClass("active");
+    }
+
     app.Functions = Functions;
 
     app.ready(function () {
@@ -50,6 +58,11 @@
 
     app.onLoad(function(){
         console.log('Functions Load');
+
+        // added a delay since sometimes this laods first before ready
+        setTimeout(function(){
+            app.Functions.prototype.setActiveStateForAccordion();
+        },100)
         
     })
 

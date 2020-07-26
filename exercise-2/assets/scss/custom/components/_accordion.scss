@@ -84,8 +84,12 @@
                             @media only screen and (max-width: 767px){
                                 padding: 0;
                             }
-                            p{
-                                
+                            p, li{
+                                font-size: em(18);
+                                margin-bottom: em(10);
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
                             }
                         }
 

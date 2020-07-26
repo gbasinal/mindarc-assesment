@@ -4,7 +4,8 @@ $(document).ready(function() {
 
 $(window).on('load', function() {
     console.log('load')
-    window.app.load();
+    window.app.load();    
+    
 });
 
 // scroll to top when page loads

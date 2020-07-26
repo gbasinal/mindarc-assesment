@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
@@ -198,5 +198,12 @@ body {
   .section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container .tabs-content-wrapper {
     padding: 0;
   }
+}
+.section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container .tabs-content-wrapper p, .section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container .tabs-content-wrapper li {
+  font-size: 1.125em;
+  margin-bottom: 0.625em;
+}
+.section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container .tabs-content-wrapper p:last-child, .section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container .tabs-content-wrapper li:last-child {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=build.css.map */
