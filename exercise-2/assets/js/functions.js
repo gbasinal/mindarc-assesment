@@ -21,9 +21,23 @@
     }
 
     Functions.prototype.setActiveStateForAccordion = function(){
+        var flag = false;
+
+        if($(window).outerWidth() < 767){
+            flag = true;
+        }
+
         $(".tabs-item").on("click", function(){
-            $(".tabs-item").removeClass("active");
-            $(this).addClass("active");
+            
+            if(flag){
+                $(this).siblings().removeClass("active");
+                $(this).toggleClass("active");
+                
+            }else {
+                $(".tabs-item").removeClass("active");
+                $(this).addClass("active");
+            }
+            
         })
     }
 
