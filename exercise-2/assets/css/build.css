@@ -109,20 +109,43 @@ body {
 }
 .section-accordion-container .accordion-wrapper {
   width: 100%;
+  max-width: 56.25em;
+  margin: 0 auto;
 }
 .section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
+  position: relative;
 }
 .section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item {
-  width: 25%;
-  border-right: 1px solid #000;
-  margin-right: 0.9375em;
+  width: calc(25% - 1em);
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  padding: 0.625em;
+}
+.section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item.active {
+  border-bottom: 0;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+.section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item.active .tabs-content-container .tabs-content-wrapper {
+  display: block;
 }
 .section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item:last-child {
   margin-right: 0;
+}
+.section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 1.5625em;
+}
+.section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item .tabs-content-container .tabs-content-wrapper {
+  padding: 0 0.625em;
+  display: none;
 }
 /*# sourceMappingURL=build.css.map */

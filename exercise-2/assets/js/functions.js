@@ -5,6 +5,7 @@
   
 	Functions.prototype.init = function() {
         Functions.prototype.inView();
+        Functions.prototype.setActiveStateForAccordion();
 	};
     // My Default script for transtion animation
     Functions.prototype.inView = function() {
@@ -17,6 +18,13 @@
                 }
             }
         });
+    }
+
+    Functions.prototype.setActiveStateForAccordion = function(){
+        $(".tabs-item").on("click", function(){
+            $(".tabs-item").removeClass("active");
+            $(this).addClass("active");
+        })
     }
 
     app.Functions = Functions;
