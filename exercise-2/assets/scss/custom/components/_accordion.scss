@@ -1,0 +1,27 @@
+.section-accordion-container {
+    padding: em(55);
+    width: 100%;
+    .accordion-wrapper {
+        width: 100%;
+        .tabs-container {
+            .tabs-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                flex-wrap: wrap;
+                .tabs-item {
+                    width: 25%;
+                    border-right: 1px solid #000;
+                    margin-right: em(15);
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    h3{
+
+                    }
+                }
+            }
+        }
+    }
+}

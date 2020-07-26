@@ -103,113 +103,26 @@ body {
   }
 }
 
-.section-card-container {
+.section-accordion-container {
   padding: 3.4375em;
+  width: 100%;
 }
-@media only screen and (max-width: 767px) {
-  .section-card-container {
-    padding: 3.125em 1.5625em;
-  }
+.section-accordion-container .accordion-wrapper {
+  width: 100%;
 }
-.section-card-container .card-wrapper {
+.section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
   flex-wrap: wrap;
 }
-.section-card-container .card-wrapper .card-item {
-  width: 25em;
-  margin-right: 2.1875em;
-  border: 1px solid #f0f0f0;
-  padding: 1.5625em;
-  border-radius: 7px;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.31);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  transition: 0.2s transform;
+.section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item {
+  width: 25%;
+  border-right: 1px solid #000;
+  margin-right: 0.9375em;
 }
-@media only screen and (max-width: 1024px) {
-  .section-card-container .card-wrapper .card-item {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 2.5em;
-  }
-  .section-card-container .card-wrapper .card-item:last-child {
-    margin-bottom: 0;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .section-card-container .card-wrapper .card-item {
-    padding: 1.25em;
-  }
-}
-.section-card-container .card-wrapper .card-item:last-child {
+.section-accordion-container .accordion-wrapper .tabs-container .tabs-wrapper .tabs-item:last-child {
   margin-right: 0;
-}
-.section-card-container .card-wrapper .card-item:hover {
-  transform: scale(1.01);
-}
-.section-card-container .card-wrapper .card-item .card-img-wrapper {
-  margin-bottom: 0.9375em;
-}
-.section-card-container .card-wrapper .card-item .card-img-wrapper img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 7px;
-}
-.section-card-container .card-wrapper .card-item .card-content-wrapper {
-  margin-bottom: 0.9375em;
-  min-height: 10.625em;
-  text-align: center;
-}
-.section-card-container .card-wrapper .card-item .card-content-wrapper p {
-  color: black;
-  font-size: 1.375em;
-  letter-spacing: -0.0125em;
-  line-height: 1.1363636364;
-  font-weight: 400;
-}
-@media only screen and (max-width: 767px) {
-  .section-card-container .card-wrapper .card-item .card-content-wrapper p {
-    color: black;
-    font-size: 1.125em;
-    letter-spacing: -0.0125em;
-    line-height: 1.3888888889;
-    font-weight: 400;
-  }
-}
-.section-card-container .card-wrapper .card-item .btn-container {
-  width: 100%;
-  text-align: center;
-}
-.section-card-container .card-wrapper .card-item .btn-container .btn {
-  border-radius: 30px;
-  border: 3px solid black;
-  text-transform: uppercase;
-  color: #141414;
-  font-size: 1.125em;
-  letter-spacing: 0.06875em;
-  line-height: 1.1111111111;
-  font-weight: 700;
-  cursor: pointer;
-  padding: 0.625em 0.9375em;
-  background-color: transparent;
-  transition: 0.2s all;
-}
-@media only screen and (max-width: 767px) {
-  .section-card-container .card-wrapper .card-item .btn-container .btn {
-    color: black;
-    font-size: 0.875em;
-    letter-spacing: 0.06875em;
-    line-height: 1.4285714286;
-    font-weight: 700;
-  }
-}
-.section-card-container .card-wrapper .card-item .btn-container .btn:hover {
-  background-color: #ccc;
-  border-color: #ccc;
-  color: white;
 }
 /*# sourceMappingURL=build.css.map */
