@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-size: 0.833vw;
+    font-family: $roboto;
+    @media only screen and (max-width: 1024px){
+        font-size: 16px;
+    }
+}
+
+
+.animated {
+    .animated-child {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+}

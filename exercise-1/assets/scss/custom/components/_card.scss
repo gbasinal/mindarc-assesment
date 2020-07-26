@@ -1,0 +1,85 @@
+.section-card-container {
+    padding: em(55);
+    @media only screen and (max-width: 767px ){
+        padding: em(50) em(25);
+    }
+    .card-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        
+        .card-item {
+            width: em(400);
+            margin-right: em(35);
+            border: 1px solid #f0f0f0;
+            padding: em(25);
+            border-radius: 7px;
+            box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.31);
+            backface-visibility: hidden;
+            @media only screen and (max-width: 1024px){
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: em(40);
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            @media only screen and (max-width: 767px){
+                padding: em(20);
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            transition: .2s transform;
+            &:hover {
+                transform: scale(1.01) ;
+            }
+            .card-img-wrapper {
+                margin-bottom: em(15);
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 7px;
+                }
+            }
+            .card-content-wrapper{
+                margin-bottom: em(15);
+                min-height: em(170);
+                text-align: center;
+                p{
+                    @include textSettings(black , 22 , -.2 , 25 , 400);
+                    
+                    @media only screen and (max-width: 767px){
+                        @include textSettings(black , 18 , -.2 , 25 , 400);
+                    }
+                    
+                }
+            }
+            .btn-container {
+                width: 100%;
+                text-align: center;
+                .btn {
+                    border-radius: 30px;
+                    border: 3px solid black;
+                    text-transform: uppercase;
+                    @include textSettings(#141414 , 18 , 1.1 , 20 , 700);
+                    cursor: pointer;
+                    padding: em(10) em(15);
+                    background-color: transparent;
+                    @media only screen and (max-width: 767px){
+                        @include textSettings(black , 14 , 1.1 , 20 , 700);
+                    }
+                    transition : .2s all;
+                    &:hover {
+                        background-color: #ccc;
+                        border-color: #ccc;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
