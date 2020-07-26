@@ -20,6 +20,11 @@ body {
   height: 40.625em;
   width: 100%;
 }
+@media only screen and (max-width: 767px) {
+  .section-masthead-container {
+    height: 23.4375em;
+  }
+}
 .section-masthead-container .masthead-wrapper {
   position: relative;
   height: 100%;
@@ -38,6 +43,12 @@ body {
   transform: translate(-50%, -50%);
   z-index: -1;
 }
+@media only screen and (max-width: 767px) {
+  .section-masthead-container .masthead-wrapper .masthead-style {
+    background-image: url("http://via.placeholder.com/600x600");
+    height: 100%;
+  }
+}
 .section-masthead-container .masthead-wrapper .masthead-content-container {
   z-index: 1;
   text-align: center;
@@ -48,12 +59,26 @@ body {
   background-color: rgba(143, 143, 143, 0.65);
   padding: 0 1.5625em;
 }
+@media only screen and (max-width: 767px) {
+  .section-masthead-container .masthead-wrapper .masthead-content-container {
+    padding: 0 0.9375em;
+  }
+}
 .section-masthead-container .masthead-wrapper .masthead-content-container .masthead-content-wrapper h1 {
   color: white;
   font-size: 5.625em;
   letter-spacing: 0em;
   line-height: 0.8888888889;
   font-weight: 700;
+}
+@media only screen and (max-width: 767px) {
+  .section-masthead-container .masthead-wrapper .masthead-content-container .masthead-content-wrapper h1 {
+    color: white;
+    font-size: 3.125em;
+    letter-spacing: 0em;
+    line-height: 1.6;
+    font-weight: 700;
+  }
 }
 .section-masthead-container .masthead-wrapper .masthead-content-container .masthead-content-wrapper p {
   color: white;
@@ -62,6 +87,15 @@ body {
   line-height: 1;
   font-weight: 300;
   padding-top: 0.625em;
+}
+@media only screen and (max-width: 767px) {
+  .section-masthead-container .masthead-wrapper .masthead-content-container .masthead-content-wrapper p {
+    color: white;
+    font-size: 1.5625em;
+    letter-spacing: 0em;
+    line-height: 1.4;
+    font-weight: 300;
+  }
 }
 
 .section-card-container {
