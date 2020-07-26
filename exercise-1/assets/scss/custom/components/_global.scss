@@ -8,4 +8,7 @@
 body {
     font-size: 0.833vw;
     font-family: $roboto;
+    @media only screen and (max-width: 1024px){
+        font-size: 16px;
+    }
 }

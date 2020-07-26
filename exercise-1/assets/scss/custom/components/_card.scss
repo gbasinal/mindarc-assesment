@@ -5,14 +5,22 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        // max-width: em(1100);
         margin: 0 auto;
+        flex-wrap: wrap;
         .card-item {
             width: em(400);
             margin-right: em(35);
-            border: 2px solid #f0f0f0;
+            border: 3px solid #f0f0f0;
             padding: em(25);
             border-radius: 10px;
+            @media only screen and (max-width: 1024px){
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: em(50);
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
             &:last-child{
                 margin-right: 0;
             }
@@ -40,7 +48,7 @@
                     border-radius: 30px;
                     border: 3px solid black;
                     text-transform: uppercase;
-                    @include textSettings(black , 18 , 1.1 , 20 , 700);
+                    @include textSettings(#141414 , 18 , 1.1 , 20 , 700);
                     cursor: pointer;
                     padding: em(10) em(15);
                     background-color: transparent;

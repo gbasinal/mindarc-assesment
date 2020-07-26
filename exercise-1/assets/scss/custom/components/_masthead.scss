@@ -1,12 +1,14 @@
 .section-masthead-container {
     height: em(650);
+    width: 100%;
     .masthead-wrapper {
         position: relative;
         height: 100%;
+        width: 100%;
         .masthead-style {
             background-image: url("http://via.placeholder.com/1920x650");
             @include bgSettings(cover , no-repeat , center);
-            width: em(1920);
+            width: 100%;
             height: em(650);
             position: absolute;
             top: 50%;
@@ -17,11 +19,12 @@
         .masthead-content-container {
             z-index: 1;
             text-align: center;
-            height: 100%;
+            height: 100%;            
             justify-content: center;
             display: flex;
             align-items: center;
             background-color: rgba(143, 143, 143, .65);
+            padding: 0 em(25);
             .masthead-content-wrapper {
                 
                 h1 {
@@ -29,8 +32,8 @@
                     
                 }
                 p {
-                    @include textSettings(white , 40, 1, 30 , 300);
-                    padding-top: em(7);
+                    @include textSettings(white , 40, 1, 40 , 300);
+                    padding-top: em(10);
                 }
             }
 
